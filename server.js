@@ -46,6 +46,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines"
 var routes = require('./routes/index');
 var articles = require('./routes/articles');
 
+// Using our routes
 app.use('/', routes);
 app.use('/articles', articles);
 
