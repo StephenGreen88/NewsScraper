@@ -1,0 +1,17 @@
+{{#each scraped}}
+  <div class="row">
+    <div class="col s12 m12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">{{this.title}}</span>
+          <p>{{this.excerpt}}</p>
+          <img src="{{this.image}}">
+        </div>
+        <div class="card-action">
+          <a class="waves-effect waves-light btn green" href="{{this.link}}">Read</a>
+          <a class="waves-effect waves-light btn blue add-article" data-title="{{this.title}}" data-excerpt="{{this.excerpt}}" data-image="{{this.image}}" data-link="{{this.link}}">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
